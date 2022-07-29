@@ -189,7 +189,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 	
 	MakeDraggable(Drag,MainFrame)
 	MakeDraggable(LeftFrame,MainFrame)
-	MainFrame:TweenSize(UDim2.new(0, 700, 0, 350), Enum.EasingDirection.Out, Enum.EasingStyle.Quart,0, true)
+	MainFrame:TweenSize(UDim2.new(0, 700, 0, 400), Enum.EasingDirection.Out, Enum.EasingStyle.Quart,0, true)
 	
 	local uitoggled = false
 	UserInputService.InputBegan:Connect(
@@ -200,7 +200,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 					uitoggled = true
 					FluxLib.Enabled = false
 				else
-					MainFrame:TweenSize(UDim2.new(0, 700, 0, 350), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, 0, true)
+					MainFrame:TweenSize(UDim2.new(0, 700, 0, 400), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, 0, true)
 					FluxLib.Enabled = true
 					uitoggled = false
 				end
